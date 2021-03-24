@@ -1,0 +1,119 @@
+/* on small devices */
+.signinScreen {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.1) 60%,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.signinScreen > form {
+  display: grid;
+  flex-direction: column;
+  padding: 30px;
+}
+.signinScreen > form > input {
+  outline-width: 0;
+  height: 30px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  background: #c7cccf;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.signinScreen > form > button {
+  padding: 16px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.signinScreen__gray {
+  color: #3a3d3f;
+  font-weight: 600;
+}
+.signinScreen > h1 {
+  text-align: left;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+.signinScreen > h4 {
+  text-align: left;
+  margin-top: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+  padding-left: 30px;
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .signinScreen {
+    position: relative;
+    max-width: 400px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .signinScreen > form {
+    display: grid;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .signinScreen > h1 {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .signinScreen > h4 {
+    text-align: left;
+    margin-top: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .signinScreen > form > input {
+    outline-width: 0;
+    height: 30px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    background: #c7cccf;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .signinScreen > form > button {
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .signinScreen__gray {
+    color: #3a3d3f;
+    font-weight: 600;
+  }
+
+  .signupScreen__link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

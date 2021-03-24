@@ -1,0 +1,188 @@
+/* on mobile only */
+.loginScreen {
+  height: 100%;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+.loginScreen__gradient {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.loginScreen__body {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 750px;
+  width: 100%;
+  padding: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.loginScreen__logo {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+.loginScreen__button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.loginScreen__body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.loginScreen__body > h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.loginScreen__body > h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.loginScreen__input {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 40px;
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+}
+.loginScreen__getStarted {
+  padding: 13px 20px 20px 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 50%;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .loginScreen {
+    height: 100%;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
+      center no-repeat;
+    background-size: cover;
+  }
+  .loginScreen__gradient {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+
+  .loginScreen__body {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+  }
+  .loginScreen__body > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .loginScreen__body > h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .loginScreen__body > h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .loginScreen__logo {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+  }
+
+  .loginScreen__button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  .loginScreen__input {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+  }
+  .loginScreen__input > form > input {
+    padding: 10px;
+    outline-width: 0;
+    height: 40px;
+    width: 66%;
+    border: none;
+    max-width: 600px;
+    font-size: 1rem;
+  }
+  .loginScreen__getStarted {
+    padding: 13px 20px 20px 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 30%;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+  }
+}
